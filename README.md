@@ -5,7 +5,7 @@
 
 ## Usage
 
-from my_lamb_data_pt5.my_mod import enlarge
+from my_lamb_data.my_mod import enlarge
 
 x = 11
 print(enlarge(x))
