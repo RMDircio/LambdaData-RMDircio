@@ -9,8 +9,9 @@ def add_state_names(my_df):
     '''
     Adds a column of US state names to a corresponding column of 
     US state abbreviations.
+    
     Parameters:
-        my_df (pandas.DataFrame) has a column called 'abbrev' with
+        my_df (pandas.DataFrame) has a column called 'abbrev' with 
         US state abbreviations.
     
     Returns:
