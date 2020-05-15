@@ -2,6 +2,7 @@
 
 ## Installation
 
+pip install -i https://test.pypi.org/simple/ my-lamb-data-pt5
 
 ## Usage
 
