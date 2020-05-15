@@ -12,8 +12,8 @@ class TestAssignment(unittest.TestCase):
 
         result = add_state_names(state_df)
         self.assertEqual(list(result.columns), ['abbrev', 'name'])
-        self.assertEqual(result.iloc[0]['abbrev', 'CA'])
-        self.assertEqual(result.iloc[0]['name', 'California'])
+        self.assertEqual(result.iloc[0]['abbrev'], 'CA')
+        self.assertEqual(result.iloc[0]['name'], 'California')
 
 
 
