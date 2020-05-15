@@ -16,5 +16,5 @@ setup(
     license="MIT",
     url="https://github.com/RMDircio/LambdaData-RMDircio",
     #keywords="",
-    packages=find_packages() # ["my_lambdata"]
+    packages= ["my_lambdata"] # find_packages()
 )
