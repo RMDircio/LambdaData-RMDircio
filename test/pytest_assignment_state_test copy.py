@@ -3,8 +3,6 @@ from pandas import DataFrame
 from my_lamb_data.assignment_state import add_state_names
 
 
-
-
 def test_add_state_names():
         
     state_df = DataFrame({'abbrev': ['CA', 'CO', 'CT', 'DC', 'TX']})
