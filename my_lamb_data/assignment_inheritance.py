@@ -4,15 +4,7 @@
 
 from pandas import DataFrame
 
-class DataProcessor():
-    def __init__(self, state_df):
-        '''
-        Parameters:
-            my_df (pandas.DataFrame) has a column called 'abbrev' with 
-            US state abbreviations.
-        '''
-        self.df = state_df
-    
+class MyFrame(DataFrame):
 
     def add_state_names(self):
         '''
@@ -20,18 +12,15 @@ class DataProcessor():
         US state abbreviations.
         '''
 
-    
         names_map = {'CA': 'California', 'CO': 'Colorado', 'CT': 'Connecticut'}
-        # breakpoint()
-        self.df['name'] = self.df['abbrev'].map(names_map)
-        return self.df
-
+        # breakpoint() 
+        self['name'] = self['abbrev'].map(names_map)
+        
 if __name__ == '__main__':
 
-    df = DataFrame({'abbrev': ['CA', 'CO', 'CT', 'DC', 'TX']})
+    my_frame = MyFrame({'abbrev': ['CA', 'CO', 'CT', 'DC', 'TX']})
+    print(my_frame.columns)
+    print(my_frame.head())
 
-    processor = DataProcessor(df)
-    print(processor.df.head())
-
-    processor.add_state_names()
-    print(processor.df.head())
+    my_frame.add_state_names()
+    print(my_frame.head())
